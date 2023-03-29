@@ -1,0 +1,7 @@
+uint32 term                     # Refer to the Raft paper for explanation.
+
+void8
+uint32 id
+uavcan.primitive.String.1.0 name
+
+@sealed

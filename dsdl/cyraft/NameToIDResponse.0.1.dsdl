@@ -1,0 +1,11 @@
+# This message is published by a name service node to inform the subscribers of the identifier associated with the named resource.
+# If there is no known association, an ID has to be chosen automatically and the name table be extended ad-hoc.
+# If there is no known association and it is impossible to create one at the moment, no response should be published.
+
+uint32 id
+# The requested identifier value.
+
+ResourceKind.0.1 kind
+uavcan.primitive.String.1.0 name
+
+@extent 512*8

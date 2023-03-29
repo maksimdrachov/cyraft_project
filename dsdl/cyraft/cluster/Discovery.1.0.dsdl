@@ -1,0 +1,12 @@
+uint8 BROADCASTING_PERIOD = 1      # [second]
+
+uint3 MAX_CLUSTER_SIZE = 5
+
+uint3 configured_cluster_size
+
+void5
+
+uavcan.node.ID.1.0[<=MAX_CLUSTER_SIZE] known_nodes
+
+@assert _offset_ % 8 == {0}
+@extent 96 * 8

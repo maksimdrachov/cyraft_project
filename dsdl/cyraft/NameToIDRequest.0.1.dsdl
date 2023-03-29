@@ -1,0 +1,10 @@
+# This message is published when a node desires to map a computational graph name to a numerical identifier.
+# The Raft node that is currently elected as the Leader should find the entry in the log and send the response.
+# If there is no such entry in the log, a new one needs to be created by the Leader ad-hoc;
+# the response with the new value is then published as soon as the Raft consensus is reached (replication completed).
+
+ResourceKind.0.1 kind
+
+uavcan.primitive.String.1.0 name
+
+@extent 512*8

@@ -1,0 +1,7 @@
+# Kind of a named resource.
+
+uint4 value
+
+uint4 SUBJECT = 0
+
+@sealed
